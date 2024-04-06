@@ -1,0 +1,74 @@
+.Main {
+  width: 1296px;
+  justify-items: flex-start;
+}
+
+.Main h2 {
+  display: block;
+  margin: 0;
+  padding: 44px 0 32px 0;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #3E3E3E;
+}
+
+.Main-cards {
+  display: flex;
+  margin: -6px;
+  height: 512px;
+
+  border-radius: 12px;
+}
+
+.Main-cards-flex {
+  display: flex;
+  flex-direction: column;
+  height: 524px;
+}
+
+@media screen and (max-width: 1199px) {
+  .Main {
+    width: 852px;
+  }
+
+  .Main h2 {
+    width: 603px;
+  }
+
+  .Main-cards {
+    flex-wrap: wrap;
+  }
+
+  .Main-cards-flex {
+    order: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .Main {
+    width: 680px;
+    height: 1200px;
+  }
+  .Main-cards-flex {
+    height: auto;
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .Main {
+    width: 100%;
+  }
+  .Main h2 {
+    width: auto;
+    padding: 24px 0;
+
+    font-size: 16px;
+    line-height: 19.36px;
+
+  }
+}

@@ -1,0 +1,161 @@
+.Card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 424px;
+  height: 100%;
+  margin: 6px;
+  padding: 13px 12px;
+
+  border-radius: 12px;
+
+  background-position: center;
+
+  color: #FFFFFF;
+}
+
+.Card-title {
+  max-width: 306px;
+  padding: 19px 0 12px 20px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  z-index: 1;
+}
+
+.Card-text {
+  max-width: 306px;
+  padding: 0 68px 32px 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  z-index: 1;
+}
+
+.Card img {
+  position: absolute;
+  margin-top: auto;
+  width: 400px;
+  bottom: 0;
+  right: 12px;
+
+  border-radius: 12px;
+}
+
+.Card-button {
+  padding: 0 0 19px 20px;
+
+  z-index: 1;
+}
+
+.Card-button button {
+  min-height: 45px;
+  padding: 8px 28px;
+
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+  letter-spacing: 0.46px;
+}
+
+.Card-button button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .Card .second {
+    width: auto;
+    height: 195px;
+    right: 0;
+  }
+  
+  .Card .third {
+    width: 160px;
+    height: auto;
+    right: 0;
+  }
+  
+  .Card .fourth {
+    width: auto;
+    height: 261px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Card {
+    max-width: 420px;
+    height: 233px;
+    background-position: left;
+  }
+
+  .Card img {
+    width: 217px;
+    right: 6px;
+  }
+
+  .Card-button { 
+    margin-top: auto;
+  }
+
+  .Card-button button {
+    min-width: 148px;
+    padding: 8px 0;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .Card {
+    width: 100%;
+    max-width: 680px;
+    background-position: 50% 75%;
+  }
+
+  .Card img {
+    width: 287px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .Card {
+    min-width: 335px;
+    height: 194px;
+    padding: 16px;
+    background-position: 50% 75%;
+  }
+
+  .Card-title {
+    padding: 0 0 8px 0;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .Card-text {
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .Card-button {
+    padding: 0;
+  }
+
+  .Card img {
+    width: 149px;
+    right: 8px;
+  }
+}
