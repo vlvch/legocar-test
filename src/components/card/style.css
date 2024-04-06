@@ -128,7 +128,7 @@
   }
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 599px) {
   .Card {
     min-width: 335px;
     height: 194px;
